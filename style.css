@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #585c68;
+  background: #93a091;
   font-size: 14px;
   line-height: 22px;
   color: #555555;
@@ -61,7 +61,7 @@ body {
 }
 
 .resume .resume_left .regular {
-  color: #b1eaff;
+  color: #caf8c4;
 }
 
 .resume .resume_item {
@@ -226,7 +226,7 @@ body {
   right: -52px;
   width: 50px;
   height: 2px;
-  background: #4c7048;
+  background: #0bb5f4;
 }
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
