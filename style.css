@@ -156,7 +156,7 @@ body {
 
 .resume .resume_right .resume_work ul,
 .resume .resume_right .resume_education ul {
-  padding-left: 40px;
+  padding-left: 36px;
   overflow: hidden;
 }
 
@@ -197,7 +197,7 @@ body {
   top: 14px;
   left: -21px;
   width: 2px;
-  height: 115px;
+  height: 92px;
   background: #4c7048;
 }
 
@@ -226,7 +226,7 @@ body {
   right: -52px;
   width: 50px;
   height: 2px;
-  background: #0bb5f4;
+  background: #4c7048;
 }
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
