@@ -7,8 +7,8 @@
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
-.data a {
-  color: #cbf0c7 !important;
+div.data a {
+  color: #b8e9b3 !important;
   text-decoration: none;
 }
 
