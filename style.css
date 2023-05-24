@@ -7,6 +7,10 @@
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
+.data a {
+  color: #cbf0c7 !important;
+  text-decoration: none;
+}
 
 body {
   background: #93a091;
@@ -232,3 +236,69 @@ body {
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
 }
+
+.resume_item.resume_projects .title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.resume_item.resume_projects .info {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.resume_item.resume_projects .info p.bold {
+  font-weight: bold;
+  color: #333;
+}
+
+.resume_item.resume_projects .info p.semi-bold {
+  font-weight: 600;
+  color: #333;
+}
+
+.resume_item.resume_projects ul {
+  list-style: none;
+}
+
+.resume_item.resume_projects ul li {
+  margin-bottom: 15px;
+}
+As for the HTML, here is the modified code including a separate paragraph to introduce the projects:
+
+html
+Copy code
+<div class="resume_item resume_projects">
+  <div class="title">
+    <p class="bold">Projects</p>
+  </div>
+  <div class="info">
+    <p>In the past year at university, I undertook two major projects that significantly enhanced my technical skills and practical understanding.</p>
+    <p>Here are brief descriptions of these projects:</p>
+  </div>
+  <ul>
+    <li>
+      <div class="info">
+        <p class="semi-bold">Wordle Clone in Java</p>
+        <p>As part of my coursework, I developed a clone of the popular word puzzle game Wordle. This project helped me strengthen my Java programming skills and understand the concepts of game logic and user interface design.</p>
+      </div>
+    </li>
+    <li>
+      <div class="info">
+        <p class="semi-bold">Client-Server Communication in C</p>
+        <p>This project involved building a server and a client in C, with a focus on processes and inter-process communication. It was a challenging and rewarding experience that strengthened my understanding of network programming and concurrent computing.</p>
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+
+
+
+
+
+
