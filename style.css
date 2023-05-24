@@ -148,6 +148,38 @@ body {
   margin-bottom: 3px;
 }
 
+.resume_languages ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #caf8c4;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume_languages ul li .language_name {
+  width: 30%;
+}
+
+.resume_languages ul li .language_progress {
+  width: 35%;
+  margin: 0 5px;
+  height: 4px; /* Adjust the height as desired */
+  background: #4c7048;
+  position: relative;
+}
+
+.resume_languages ul li .language_per {
+  width: 20%;
+}
+
+.resume_languages ul li .language_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
 .resume .resume_right {
   width: 520px;
   background: #fff;
@@ -232,6 +264,8 @@ body {
   height: 2px;
   background: #4c7048;
 }
+
+
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
