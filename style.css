@@ -148,6 +148,21 @@ body {
   margin-bottom: 3px;
 }
 
+.skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill_container {
+  border: 2px solid #caf8c4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 48%;  /* Isso fará com que dois deles caibam em uma linha com algum espaço entre */
+}
+
 .resume_languages ul li {
   display: flex;
   margin-bottom: 10px;
