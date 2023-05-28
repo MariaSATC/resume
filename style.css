@@ -153,6 +153,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.resume .resume_left .skills_list .skill_container {
+  display: block;
+}
 
 .skill_container {
   border: 2px solid #caf8c4;
