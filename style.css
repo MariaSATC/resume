@@ -179,9 +179,9 @@ body {
 }
 
 .resume_languages ul li .language_progress {
-  width: 35%;
+  width: 30%;
   margin: 0 5px;
-  height: 4px; /* Adjust the height as desired */
+  height: 1.1px; /* Adjust the height as desired */
   background: #4c7048;
   position: relative;
 }
