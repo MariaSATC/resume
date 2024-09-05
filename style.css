@@ -232,19 +232,6 @@ body {
   margin-bottom: 0;
 }
 
-.resume_right ul li:after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: -21px;
-  width: 2px;
-  height: 92px; /* Change this value to accommodate all entries */
-  background: #4c7048;
-}
-
-.resume_right ul li:last-child:after {
-  height: 0; /* Stops the timeline at the last entry */
-}
 
 .resume .resume_right .resume_work ul li:before,
 .resume .resume_right .resume_education ul li:before {
