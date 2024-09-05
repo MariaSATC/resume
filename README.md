@@ -1,7 +1,4 @@
-# resume
-
-
-# CV of [Your Name]
+# CV of Maria Travanca da Costa
 
 ## Introduction
 I am in my final-year of my bachelor's degree in Computer Engineering. This CV highlights my background in software development.
