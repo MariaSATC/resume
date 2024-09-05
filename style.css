@@ -163,7 +163,7 @@ body {
   margin-bottom: 10px;
   border-radius: 5px;
   text-align: center;
-  width: 48%;  
+  width: 48%;  /* Isso fará com que dois deles caibam em uma linha com algum espaço entre */
 }
 
 .resume_languages ul li {
@@ -181,7 +181,7 @@ body {
 .resume_languages ul li .language_progress {
   width: 30%;
   margin: 0 5px;
-  height: 1.1px; 
+  height: 1.1px; /* Adjust the height as desired */
   background: #4c7048;
   position: relative;
 }
@@ -231,7 +231,6 @@ body {
 .resume .resume_right ul li:last-child .info {
   margin-bottom: 0;
 }
-
 
 .resume .resume_right .resume_work ul li:before,
 .resume .resume_right .resume_education ul li:before {
