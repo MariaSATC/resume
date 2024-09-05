@@ -8,5 +8,5 @@ This CV is available in [PDF format](https://github.com/user-attachments/files/1
 And [QR Code](https://github.com/user-attachments/files/16900675/MariaTravancaCostaCV.pdf)!
 
 ## Contact Information
-For any inquiries or further information, please contact me at [mariatravancacosta@gmail.com](mariatravancacosta@gmail.com) or [msatc1@iscte-iul.pt](msatc1@iscte-iul.pt).
+For any inquiries or further information, please contact me at mariatravancacosta@gmail.com or msatc1@iscte-iul.pt.
 
