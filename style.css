@@ -163,7 +163,7 @@ body {
   margin-bottom: 10px;
   border-radius: 5px;
   text-align: center;
-  width: 48%;  /* Isso fará com que dois deles caibam em uma linha com algum espaço entre */
+  width: 48%;  
 }
 
 .resume_languages ul li {
@@ -181,7 +181,7 @@ body {
 .resume_languages ul li .language_progress {
   width: 30%;
   margin: 0 5px;
-  height: 1.1px; /* Adjust the height as desired */
+  height: 1.1px; 
   background: #4c7048;
   position: relative;
 }
@@ -230,6 +230,20 @@ body {
 
 .resume .resume_right ul li:last-child .info {
   margin-bottom: 0;
+}
+
+.resume_right ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 92px; /* Change this value to accommodate all entries */
+  background: #4c7048;
+}
+
+.resume_right ul li:last-child:after {
+  height: 0; /* Stops the timeline at the last entry */
 }
 
 .resume .resume_right .resume_work ul li:before,
@@ -319,34 +333,6 @@ body {
 .resume_item.resume_projects ul li {
   margin-bottom: 15px;
 }
-As for the HTML, here is the modified code including a separate paragraph to introduce the projects:
-
-html
-Copy code
-<div class="resume_item resume_projects">
-  <div class="title">
-    <p class="bold">Projects</p>
-  </div>
-  <div class="info">
-    <p>In the past year at university, I undertook two major projects that significantly enhanced my technical skills and practical understanding.</p>
-    <p>Here are brief descriptions of these projects:</p>
-  </div>
-  <ul>
-    <li>
-      <div class="info">
-        <p class="semi-bold">Wordle Clone in Java</p>
-        <p>As part of my coursework, I developed a clone of the popular word puzzle game Wordle. This project helped me strengthen my Java programming skills and understand the concepts of game logic and user interface design.</p>
-      </div>
-    </li>
-    <li>
-      <div class="info">
-        <p class="semi-bold">Client-Server Communication in C</p>
-        <p>This project involved building a server and a client in C, with a focus on processes and inter-process communication. It was a challenging and rewarding experience that strengthened my understanding of network programming and concurrent computing.</p>
-      </div>
-    </li>
-  </ul>
-
-</div>
 
 
 
