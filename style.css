@@ -330,6 +330,11 @@ body {
     color: #333;
 }
 
+.resume_item.resume_projects .info p.semi-bold-little {
+    font-weight: 500;
+    color: #181818;
+}
+
 .resume_item.resume_projects ul {
     list-style: none;
 }
