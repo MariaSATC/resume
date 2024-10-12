@@ -331,8 +331,9 @@ body {
 }
 
 .resume_item.resume_projects .info p.semi-bold-little {
-    font-weight: 500;
-    color: #181818;
+    font-weight: 700;
+    font-size: 80%;
+    color: #131313;
 }
 
 .resume_item.resume_projects ul {
