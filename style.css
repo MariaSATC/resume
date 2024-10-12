@@ -355,4 +355,25 @@ body {
     .resume .resume_left,
     .resume .resume_right {
         width: 100%;
-   
+    }
+
+    .resume .resume_profile {
+        height: auto;
+        width: 60%; 
+        margin: 0 auto; 
+    }
+
+    .resume .resume_left .resume_profile img {
+        height: auto;
+        width: 100%; 
+        object-fit: cover; 
+    }
+
+    .resume .resume_left {
+        margin-bottom: 20px;
+    }
+
+    .resume .resume_item {
+        padding: 15px 0;
+    }
+}
