@@ -363,6 +363,10 @@ body {
         margin: 0 auto; 
     }
 
+    .resume .resume_left .resume_content {
+        padding-top: 20px; 
+    }
+
     .resume .resume_left .resume_profile img {
         height: auto;
         width: 100%; 
