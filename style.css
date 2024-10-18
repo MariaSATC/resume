@@ -376,4 +376,33 @@ body {
     .resume .resume_item {
         padding: 15px 0;
     }
+
+    /* Fix for overlapping issue */
+    .resume .resume_right ul li {
+        margin-bottom: 30px;
+    }
+
+    .resume .resume_right .resume_work ul,
+    .resume .resume_right .resume_education ul {
+        padding-left: 20px; /* Adjust padding to prevent overflow */
+    }
+
+    /* Increase line height to avoid overlap in text */
+    .resume .resume_right ul li .info {
+        line-height: 1.6;
+    }
+
+    /* Adjust font sizes for better readability */
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .bold {
+        font-size: 18px;
+    }
+
+    .semi-bold {
+        font-size: 14px;
+    }
 }
