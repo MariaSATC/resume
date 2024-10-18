@@ -364,7 +364,8 @@ body {
     }
 
     .resume .resume_left .resume_content {
-        padding-top: 20px; 
+        clear: both; 
+        padding-top: 0; 
     }
 
     .resume .resume_left .resume_profile img {
