@@ -369,40 +369,24 @@ body {
         object-fit: cover; 
     }
 
+    .resume .resume_profile {
+        width: 100%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+    
+    .resume .resume_left .resume_profile img {
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        display: block; 
+    }
+
     .resume .resume_left {
         margin-bottom: 20px;
     }
 
     .resume .resume_item {
         padding: 15px 0;
-    }
-
-    /* Fix for overlapping issue */
-    .resume .resume_right ul li {
-        margin-bottom: 30px;
-    }
-
-    .resume .resume_right .resume_work ul,
-    .resume .resume_right .resume_education ul {
-        padding-left: 20px; /* Adjust padding to prevent overflow */
-    }
-
-    /* Increase line height to avoid overlap in text */
-    .resume .resume_right ul li .info {
-        line-height: 1.6;
-    }
-
-    /* Adjust font sizes for better readability */
-    body {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .bold {
-        font-size: 18px;
-    }
-
-    .semi-bold {
-        font-size: 14px;
     }
 }
