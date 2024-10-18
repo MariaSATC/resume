@@ -359,20 +359,14 @@ body {
 
     .resume .resume_profile {
         height: auto;
-        width: 100%; 
+        width: 60%; 
         margin: 0 auto; 
-    }
-
-    .resume .resume_left .resume_content {
-        clear: both; 
-        padding-top: 0; 
     }
 
     .resume .resume_left .resume_profile img {
         height: auto;
         width: 100%; 
-        object-fit: cover;
-        display: block;  
+        object-fit: cover; 
     }
 
     .resume .resume_left {
