@@ -16,7 +16,7 @@ div.data a {
     text-decoration: none;
 }
 
-/* Body Styles - Set background, font size, and text color for the body */
+/* Body Styles */
 body {
     background: #93a091;
     font-size: 14px;
@@ -24,7 +24,7 @@ body {
     color: #555555;
 }
 
-/* Font Weight Classes - Define classes for bold and semi-bold text */
+/* Font Weight Classes */
 .bold {
     font-weight: 700;
     font-size: 20px;
@@ -35,21 +35,18 @@ body {
     font-size: 16px;
 }
 
-/* Resume Container - Main container for the resume */
+/* Resume Container */
 .resume {
     width: 800px;
-    height: auto;
-    display: flex;
     margin: 50px auto;
+    display: flex;
 }
 
-/* Left Section - Styling for the left side of the resume */
+/* Left Section */
 .resume .resume_left {
     width: 280px;
     background: #5c8856;
 }
-
-/* Profile Picture in Left Section */
 .resume .resume_left .resume_profile {
     width: 100%;
     height: 280px;
@@ -58,18 +55,16 @@ body {
     width: 100%;
     height: 100%;
 }
-
-/* Content Padding for Left Section */
 .resume .resume_left .resume_content {
     padding: 0 25px;
 }
 
-/* Section Title - Margin for section titles */
+/* Section Title */
 .resume .title {
     margin-bottom: 20px;
 }
 
-/* Text Colors for Left Section */
+/* Left Section Text Colors */
 .resume .resume_left .bold {
     color: #fff;
 }
@@ -77,7 +72,7 @@ body {
     color: #caf8c4;
 }
 
-/* Resume Item Style - General style for items in the resume */
+/* Resume Item Style */
 .resume .resume_item {
     padding: 25px 0;
     border-bottom: 2px solid #caf8c4;
@@ -87,7 +82,7 @@ body {
     border-bottom: 0px;
 }
 
-/* List Style for Left Section - Styling list items */
+/* List Style */
 .resume .resume_left ul li {
     display: flex;
     margin-bottom: 10px;
@@ -97,7 +92,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Icon Styles in Left Section */
+/* Icon Styles */
 .resume .resume_left ul li .icon {
     width: 35px;
     height: 35px;
@@ -108,8 +103,6 @@ body {
     font-size: 16px;
     position: relative;
 }
-
-/* Center Icon - Positioning icon in the center */
 .resume .icon i,
 .resume .resume_right .resume_hobby ul li i {
     position: absolute;
@@ -117,13 +110,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-/* Text Color in Left Section - Color for text items */
 .resume .resume_left ul li .data {
     color: #caf8c4;
 }
 
-/* Skill Section in Left Section - Style for skill items */
+/* Skills Section */
 .resume .resume_left .resume_skills ul li {
     display: flex;
     margin-bottom: 10px;
@@ -131,11 +122,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .resume .resume_left .resume_skills ul li .skill_name {
     width: 25%;
 }
-
 .resume .resume_left .resume_skills ul li .skill_progress {
     width: 60%;
     margin: 0 5px;
@@ -143,11 +132,9 @@ body {
     background: #4c7048;
     position: relative;
 }
-
 .resume .resume_left .resume_skills ul li .skill_per {
     width: 15%;
 }
-
 .resume .resume_left .resume_skills ul li .skill_progress span {
     position: absolute;
     top: 0;
@@ -156,20 +143,18 @@ body {
     background: #fff;
 }
 
-/* Social Links in Left Section */
+/* Social Links */
 .resume .resume_left .resume_social .semi-bold {
     color: #fff;
     margin-bottom: 3px;
 }
 
-/* Skills List Layout - Layout for skills in a flex container */
+/* Skills List Layout */
 .skills_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-/* Individual Skill Container */
 .resume .resume_left .skills_list .skill_container {
     display: block;
     border: 2px solid #caf8c4;
@@ -180,7 +165,7 @@ body {
     width: 48%;
 }
 
-/* Language Section - Layout and style for language proficiency */
+/* Language Section */
 .resume_languages ul li {
     display: flex;
     margin-bottom: 10px;
@@ -188,11 +173,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .resume_languages ul li .language_name {
     width: 30%;
 }
-
 .resume_languages ul li .language_progress {
     width: 30%;
     margin: 0 5px;
@@ -200,11 +183,9 @@ body {
     background: #4c7048;
     position: relative;
 }
-
 .resume_languages ul li .language_per {
     width: 20%;
 }
-
 .resume_languages ul li .language_progress span {
     position: absolute;
     top: 0;
@@ -213,35 +194,28 @@ body {
     background: #fff;
 }
 
-/* Right Section - Styling for the right side of the resume */
+/* Right Section */
 .resume .resume_right {
     width: 520px;
     background: #fff;
     padding: 25px;
 }
-
-/* Text Colors for Right Section */
 .resume .resume_right .bold {
     color: #4c7048;
 }
-
-/* Work and Education Section in Right Section */
 .resume .resume_right .resume_work ul,
 .resume .resume_right .resume_education ul {
     padding-left: 36px;
     overflow: hidden;
 }
-
 .resume .resume_right ul li {
     position: relative;
 }
-
 .resume .resume_right ul li .date {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-
 .resume .resume_right ul li .info {
     margin-bottom: 20px;
 }
@@ -249,7 +223,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Timeline Dots and Lines - Style for timeline elements */
+/* Timeline Dots and Lines */
 .resume .resume_right .resume_work ul li:before,
 .resume .resume_right .resume_education ul li:before {
     content: "";
@@ -261,7 +235,6 @@ body {
     border-radius: 50%;
     border: 2px solid #4c7048;
 }
-
 .resume .resume_right .resume_work ul li:after,
 .resume .resume_right .resume_education ul li:after {
     content: "";
@@ -273,12 +246,11 @@ body {
     background: #4c7048;
 }
 
-/* Hobby Section in Right Section */
+/* Hobby Section */
 .resume .resume_right .resume_hobby ul {
     display: flex;
     justify-content: space-between;
 }
-
 .resume .resume_right .resume_hobby ul li {
     width: 76px;
     height: 76px;
@@ -287,11 +259,9 @@ body {
     position: relative;
     color: #4c7048;
 }
-
 .resume .resume_right .resume_hobby ul li i {
     font-size: 30px;
 }
-
 .resume .resume_right .resume_hobby ul li:before {
     content: "";
     position: absolute;
@@ -301,76 +271,92 @@ body {
     height: 2px;
     background: #4c7048;
 }
-
 .resume .resume_right .resume_hobby ul li:last-child:before {
     display: none;
 }
 
-/* Projects Section in Right Section */
+/* Projects Section */
 .resume_item.resume_projects .title {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 20px;
 }
-
 .resume_item.resume_projects .info {
     font-size: 1em;
     color: #555;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
 .resume_item.resume_projects .info p.bold {
     font-weight: bold;
     color: #333;
 }
-
 .resume_item.resume_projects .info p.semi-bold {
     font-weight: 600;
     color: #333;
 }
-
 .resume_item.resume_projects .info p.semi-bold-little {
     font-weight: 700;
     font-size: 80%;
     color: #131313;
 }
-
 .resume_item.resume_projects ul {
     list-style: none;
 }
-
 .resume_item.resume_projects ul li {
     margin-bottom: 15px;
 }
 
-/* Media Query for Phones - Adjust layout for smaller screens */
+/* Responsive Layout for Smaller Screens */
 @media (max-width: 768px) {
+    /* Adjust Resume Layout */
     .resume {
-        width: 90%;
+        width: 95%;
         flex-direction: column;
         margin: 20px auto;
     }
 
+    /* Full Width for Left and Right Sections */
     .resume .resume_left,
     .resume .resume_right {
         width: 100%;
-   
+        padding: 20px;
     }
+
+    /* Profile Picture Adjustments */
     .resume .resume_profile {
         height: auto;
-        width: 60%; 
-        margin: 0 auto; 
+        width: 60%;
+        margin: 0 auto 20px; /* Center and add spacing */
     }
-    .resume .resume_left .resume_profile img {
+
+    .resume .resume_profile img {
+        width: 100%;
         height: auto;
-        width: 100%; 
-        object-fit: cover; 
+        object-fit: cover;
+        border-radius: 0.05%; /* Optional: make the image round for a cleaner look */
     }
-    .resume .resume_left {
-        margin-bottom: 20px;
-    }
+
+    /* Improved Text and Section Spacing */
     .resume .resume_item {
         padding: 15px 0;
     }
+
+    /* Hobbies Section - Improved Layout */
+    .resume .resume_right .resume_hobby ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .resume .resume_right .resume_hobby ul li {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
