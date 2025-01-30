@@ -1,17 +1,14 @@
-/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-/* Color Variables */
 :root {
     --primary-green: #4a705c;
     --secondary-green: #6a9278;
     --accent-green: #d8efe0;
-    --light-green: #f0f4f3;
+    --light-green: #eef5ed;
     --dark-text: #2d3748;
     --light-text: #f8f9fa;
 }
 
-/* Global Styles - Reset default styling for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +17,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* Link Styles - Customize link appearance */
 div.data a {
     color: var(--accent-green) !important;
     text-decoration: none;
@@ -31,86 +27,104 @@ div.data a:hover {
     opacity: 0.8;
 }
 
-/* Body Styles */
 body {
     background: var(--light-green);
     font-size: 14px;
     line-height: 22px;
     color: var(--dark-text);
+    min-height: 100vh;
+    padding: 2rem;
 }
 
-/* Font Weight Classes */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(240, 244, 243, 0.2) 25%, transparent 25%, transparent 75%, rgba(240, 244, 243, 0.2) 75%, rgba(240, 244, 243, 0.2)), linear-gradient(45deg, rgba(240, 244, 243, 0.2) 25%, transparent 25%, transparent 75%, rgba(240, 244, 243, 0.2) 75%, rgba(240, 244, 243, 0.2));
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    z-index: -1;
+    opacity: 0.15;
+}
+
 .bold {
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
     color: var(--primary-green);
 }
+
 .semi-bold {
     font-weight: 500;
     font-size: 16px;
 }
 
-/* Resume Container */
 .resume {
     width: 800px;
-    margin: 50px auto;
+    margin: 0 auto;
     display: flex;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px -10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: var(--light-text);
 }
 
-/* Left Section */
 .resume .resume_left {
     width: 280px;
     background: var(--primary-green);
 }
+
 .resume .resume_left .resume_profile {
     width: 100%;
     height: 280px;
 }
+
 .resume .resume_left .resume_profile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .resume .resume_left .resume_content {
     padding: 0 25px;
 }
 
-/* Section Title */
 .resume .title {
     margin-bottom: 20px;
 }
 
-/* Left Section Text Colors */
 .resume .resume_left .bold {
     color: var(--light-text);
 }
+
 .resume .resume_left .regular {
     color: var(--accent-green);
 }
 
-/* Resume Item Style */
 .resume .resume_item {
     padding: 25px 0;
     border-bottom: 2px solid var(--accent-green);
 }
+
 .resume .resume_left .resume_item:last-child,
 .resume .resume_right .resume_item:last-child {
     border-bottom: 0px;
 }
 
-/* List Style */
 .resume .resume_left ul li {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
 }
+
 .resume .resume_left ul li:last-child {
     margin-bottom: 0;
 }
 
-/* Icon Styles */
 .resume .resume_left ul li .icon {
     width: 35px;
     height: 35px;
@@ -122,9 +136,11 @@ body {
     position: relative;
     transition: transform 0.3s ease;
 }
+
 .resume .resume_left ul li .icon:hover {
     transform: scale(1.1);
 }
+
 .resume .icon i,
 .resume .resume_right .resume_hobby ul li i {
     position: absolute;
@@ -132,11 +148,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .resume .resume_left ul li .data {
     color: var(--accent-green);
 }
 
-/* Skills Section */
 .resume .resume_left .resume_skills ul li {
     display: flex;
     margin-bottom: 10px;
@@ -144,9 +160,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .resume .resume_left .resume_skills ul li .skill_name {
     width: 25%;
 }
+
 .resume .resume_left .resume_skills ul li .skill_progress {
     width: 60%;
     margin: 0 5px;
@@ -154,9 +172,11 @@ body {
     background: var(--secondary-green);
     position: relative;
 }
+
 .resume .resume_left .resume_skills ul li .skill_per {
     width: 15%;
 }
+
 .resume .resume_left .resume_skills ul li .skill_progress span {
     position: absolute;
     top: 0;
@@ -165,18 +185,17 @@ body {
     background: var(--light-text);
 }
 
-/* Social Links */
 .resume .resume_left .resume_social .semi-bold {
     color: var(--light-text);
     margin-bottom: 3px;
 }
 
-/* Skills List Layout */
 .skills_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .resume .resume_left .skills_list .skill_container {
     display: block;
     border: 2px solid var(--accent-green);
@@ -188,11 +207,11 @@ body {
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.1);
 }
+
 .resume .resume_left .skills_list .skill_container:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Language Section */
 .resume_languages ul li {
     display: flex;
     margin-bottom: 10px;
@@ -200,9 +219,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .resume_languages ul li .language_name {
     width: 30%;
 }
+
 .resume_languages ul li .language_progress {
     width: 30%;
     margin: 0 5px;
@@ -210,9 +231,11 @@ body {
     background: var(--secondary-green);
     position: relative;
 }
+
 .resume_languages ul li .language_per {
     width: 20%;
 }
+
 .resume_languages ul li .language_progress span {
     position: absolute;
     top: 0;
@@ -221,37 +244,41 @@ body {
     background: var(--light-text);
 }
 
-/* Right Section */
 .resume .resume_right {
     width: 520px;
     background: var(--light-text);
     padding: 25px;
 }
+
 .resume .resume_right .bold {
     color: var(--primary-green);
 }
+
 .resume .resume_right .resume_work ul,
 .resume .resume_right .resume_education ul {
     padding-left: 36px;
     overflow: hidden;
 }
+
 .resume .resume_right ul li {
     position: relative;
 }
+
 .resume .resume_right ul li .date {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 15px;
     color: var(--secondary-green);
 }
+
 .resume .resume_right ul li .info {
     margin-bottom: 20px;
 }
+
 .resume .resume_right ul li:last-child .info {
     margin-bottom: 0;
 }
 
-/* Timeline Dots and Lines */
 .resume .resume_right .resume_work ul li:before,
 .resume .resume_right .resume_education ul li:before {
     content: "";
@@ -263,6 +290,7 @@ body {
     border-radius: 50%;
     border: 2px solid var(--primary-green);
 }
+
 .resume .resume_right .resume_work ul li:after,
 .resume .resume_right .resume_education ul li:after {
     content: "";
@@ -274,11 +302,11 @@ body {
     background: var(--primary-green);
 }
 
-/* Hobby Section */
 .resume .resume_right .resume_hobby ul {
     display: flex;
     justify-content: space-between;
 }
+
 .resume .resume_right .resume_hobby ul li {
     width: 76px;
     height: 76px;
@@ -288,12 +316,15 @@ body {
     color: var(--primary-green);
     transition: transform 0.3s ease;
 }
+
 .resume .resume_right .resume_hobby ul li:hover {
     transform: scale(1.05);
 }
+
 .resume .resume_right .resume_hobby ul li i {
     font-size: 30px;
 }
+
 .resume .resume_right .resume_hobby ul li:before {
     content: "";
     position: absolute;
@@ -303,48 +334,59 @@ body {
     height: 2px;
     background: var(--primary-green);
 }
+
 .resume .resume_right .resume_hobby ul li:last-child:before {
     display: none;
 }
 
-/* Projects Section */
 .resume_item.resume_projects .title {
     font-size: 1.5em;
     color: var(--dark-text);
     margin-bottom: 20px;
 }
+
 .resume_item.resume_projects .info {
     font-size: 1em;
     color: var(--dark-text);
     line-height: 1.5;
     margin-bottom: 20px;
 }
+
 .resume_item.resume_projects .info p.bold {
     font-weight: bold;
     color: var(--primary-green);
 }
+
 .resume_item.resume_projects .info p.semi-bold {
     font-weight: 600;
     color: var(--secondary-green);
 }
+
 .resume_item.resume_projects .info p.semi-bold-little {
     font-weight: 700;
     font-size: 80%;
     color: var(--dark-text);
 }
+
 .resume_item.resume_projects ul {
     list-style: none;
 }
+
 .resume_item.resume_projects ul li {
     margin-bottom: 15px;
 }
 
-/* Responsive Layout for Smaller Screens */
 @media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        background: #f8faf8;
+    }
+    
     .resume {
         width: 95%;
         flex-direction: column;
         margin: 20px auto;
+        border-radius: 8px;
     }
 
     .resume .resume_left,
@@ -382,5 +424,4 @@ body {
         align-items: center;
         justify-content: center;
     }
-
 }
